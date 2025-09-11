@@ -1,3 +1,25 @@
+<script setup lang="ts">
+import { getCurrentWindow } from "@tauri-apps/api/window";
+import { onMounted } from "vue";
+
+// when using `"withGlobalTauri": true`, you may use
+// const { getCurrentWindow } = window.__TAURI__.window;
+
+const appWindow = getCurrentWindow();
+
+onMounted(() => {
+  document
+    .getElementById("titlebar-minimize")
+    ?.addEventListener("click", () => appWindow.minimize());
+  document
+    .getElementById("titlebar-maximize")
+    ?.addEventListener("click", () => appWindow.toggleMaximize());
+  document
+    .getElementById("titlebar-close")
+    ?.addEventListener("click", () => appWindow.close());
+});
+</script>
+
 <template>
   <div class="titlebar">
     <div data-tauri-drag-region></div>
@@ -70,5 +92,9 @@
 }
 .titlebar button:hover {
   background: #5bbec3;
+}
+
+*[data-tauri-drag-region] {
+  app-region: drag;
 }
 </style>
