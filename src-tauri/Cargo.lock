@@ -1867,7 +1867,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "judis-rem"
+name = "juris-rem"
 version = "0.1.0"
 dependencies = [
  "serde",
