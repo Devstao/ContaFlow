@@ -16,6 +16,7 @@
     "@tauri-apps/plugin-opener": "^2.5.0",
     "@vue-styled-components/core": "^1.13.3",
     "bootstrap": "^5.3.8",
+    "bootstrap-vue-next": "^0.40.3",
     "pinia": "^3.0.3",
     "primevue": "^4.3.9",
     "quill": "^2.0.3",

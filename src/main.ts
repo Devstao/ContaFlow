@@ -1,5 +1,5 @@
 import Aura from "@primeuix/themes/aura";
-
+import "bootstrap-vue-next/dist/bootstrap-vue-next.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { createPinia } from "pinia";
 import PrimeVue from "primevue/config";

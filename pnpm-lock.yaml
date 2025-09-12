@@ -26,6 +26,9 @@ importers:
       bootstrap:
         specifier: ^5.3.8
         version: 5.3.8(@popperjs/core@2.11.8)
+      bootstrap-vue-next:
+        specifier: ^0.40.3
+        version: 0.40.3(vue-router@4.5.1(vue@3.5.21(typescript@5.6.3)))(vue@3.5.21(typescript@5.6.3))
       pinia:
         specifier: ^3.0.3
         version: 3.0.3(typescript@5.6.3)(vue@3.5.21(typescript@5.6.3))
@@ -585,6 +588,21 @@ packages:
 
   birpc@2.5.0:
     resolution: {integrity: sha512-VSWO/W6nNQdyP520F1mhf+Lc2f8pjGQOtoHHm7Ze8Go1kX7akpVIrtTa0fn+HB0QJEDVacl6aO08YE0PgXfdnQ==}
+
+  bootstrap-vue-next@0.40.3:
+    resolution: {integrity: sha512-m56s9St9gGFytO4EhNGC3tfp13OBWCP9GN7SJBMwKQ6KIHS062lfUYYK1oiherMUi8kEpVaa7NnaBxdhBKr0tg==}
+    peerDependencies:
+      '@floating-ui/vue': '*'
+      '@vueuse/core': '*'
+      vue: ^3.5.13
+      vue-router: '*'
+    peerDependenciesMeta:
+      '@floating-ui/vue':
+        optional: true
+      '@vueuse/core':
+        optional: true
+      vue-router:
+        optional: true
 
   bootstrap@5.3.8:
     resolution: {integrity: sha512-HP1SZDqaLDPwsNiqRqi5NcP0SSXciX2s9E+RyqJIIqGo+vJeN5AJVM98CXmW/Wux0nQ5L7jeWUdplCEf0Ee+tg==}
@@ -1382,6 +1400,12 @@ snapshots:
   binary-extensions@2.3.0: {}
 
   birpc@2.5.0: {}
+
+  bootstrap-vue-next@0.40.3(vue-router@4.5.1(vue@3.5.21(typescript@5.6.3)))(vue@3.5.21(typescript@5.6.3)):
+    dependencies:
+      vue: 3.5.21(typescript@5.6.3)
+    optionalDependencies:
+      vue-router: 4.5.1(vue@3.5.21(typescript@5.6.3))
 
   bootstrap@5.3.8(@popperjs/core@2.11.8):
     dependencies:
