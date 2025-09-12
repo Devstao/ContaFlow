@@ -17,6 +17,12 @@ importers:
       '@tauri-apps/plugin-opener':
         specifier: ^2
         version: 2.5.0
+      bootstrap:
+        specifier: ^5.3.8
+        version: 5.3.8(@popperjs/core@2.11.8)
+      bootstrap-vue-next:
+        specifier: ^0.40.2
+        version: 0.40.2(vue-router@4.5.1(vue@3.5.21(typescript@5.6.3)))(vue@3.5.21(typescript@5.6.3))
       pinia:
         specifier: ^3.0.3
         version: 3.0.3(typescript@5.6.3)(vue@3.5.21(typescript@5.6.3))
@@ -223,6 +229,9 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
+
+  '@popperjs/core@2.11.8':
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
 
   '@rollup/rollup-android-arm-eabi@4.50.1':
     resolution: {integrity: sha512-HJXwzoZN4eYTdD8bVV22DN8gsPCAj3V20NHKOs8ezfXanGpmVPR7kalUHd+Y31IJp9stdB87VKPFbsGY3H/2ag==}
@@ -491,6 +500,26 @@ packages:
 
   birpc@2.5.0:
     resolution: {integrity: sha512-VSWO/W6nNQdyP520F1mhf+Lc2f8pjGQOtoHHm7Ze8Go1kX7akpVIrtTa0fn+HB0QJEDVacl6aO08YE0PgXfdnQ==}
+
+  bootstrap-vue-next@0.40.2:
+    resolution: {integrity: sha512-1q2hCQVRKaNE/VqWbb1pV1gYOZrcaDvrD/I0+5a9MNMVwyoIUoJXiIZHPb8c2/GBZv00VlDXC24aBP85eoXR8Q==}
+    peerDependencies:
+      '@floating-ui/vue': '*'
+      '@vueuse/core': '*'
+      vue: ^3.5.13
+      vue-router: '*'
+    peerDependenciesMeta:
+      '@floating-ui/vue':
+        optional: true
+      '@vueuse/core':
+        optional: true
+      vue-router:
+        optional: true
+
+  bootstrap@5.3.8:
+    resolution: {integrity: sha512-HP1SZDqaLDPwsNiqRqi5NcP0SSXciX2s9E+RyqJIIqGo+vJeN5AJVM98CXmW/Wux0nQ5L7jeWUdplCEf0Ee+tg==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.8
 
   brace-expansion@2.0.2:
     resolution: {integrity: sha512-Jt0vHyM+jmUBqojB7E1NIYadt0vI0Qxjxd2TErW94wDz+E2LAm5vKMXXwg6ZZBTHPuUlDgQHKXvjGBdfcF1ZDQ==}
@@ -775,6 +804,8 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
+  '@popperjs/core@2.11.8': {}
+
   '@rollup/rollup-android-arm-eabi@4.50.1':
     optional: true
 
@@ -1015,6 +1046,16 @@ snapshots:
   balanced-match@1.0.2: {}
 
   birpc@2.5.0: {}
+
+  bootstrap-vue-next@0.40.2(vue-router@4.5.1(vue@3.5.21(typescript@5.6.3)))(vue@3.5.21(typescript@5.6.3)):
+    dependencies:
+      vue: 3.5.21(typescript@5.6.3)
+    optionalDependencies:
+      vue-router: 4.5.1(vue@3.5.21(typescript@5.6.3))
+
+  bootstrap@5.3.8(@popperjs/core@2.11.8):
+    dependencies:
+      '@popperjs/core': 2.11.8
 
   brace-expansion@2.0.2:
     dependencies:
