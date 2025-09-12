@@ -1,0 +1,15 @@
+body {
+
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+
+}
+
+
+body>#app {
+
+    width: 100%;
+    height: 100%;
+
+}

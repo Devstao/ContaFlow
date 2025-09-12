@@ -1,21 +1,11 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
-
-import { ask } from "@tauri-apps/plugin-dialog";
 import TitlebarView from "./components/TitlebarView.vue";
-
-onMounted(async () => {
-  const answer = await ask("This action cannot be reverted. Are you sure?", {
-    title: "Tauri",
-    kind: "warning",
-  });
-
-  console.log(answer);
-});
+import SideBarComponent from "./views/app/dashboard/styled/sidebar";
 </script>
 
 <template>
   <TitlebarView />
+  <SideBarComponent />
   <RouterView v-slot="{ Component }">
     <Transition name="fade" mode="out-in">
       <component :is="Component"></component>
@@ -24,9 +14,7 @@ onMounted(async () => {
 </template>
 
 <style>
-body {
-  width: 100dvw;
-  height: 100dvh;
-  overflow: hidden;
+#ContentApp {
+  min-height: 100dvh;
 }
 </style>
