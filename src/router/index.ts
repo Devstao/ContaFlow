@@ -12,8 +12,10 @@ const router = createRouter({
     {
       path: "/dashboard",
       name: "dashboard",
-      component: () =>
-        import("@/views/app/dashboard/components/DashboardView.vue"),
+      component: () => import("@/app/dashboard/components/DashboardView.vue"),
+      meta: {
+        isLogged: true,
+      },
     },
   ],
 });
