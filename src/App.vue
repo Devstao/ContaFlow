@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import SideBar from "@/app/styled/sidebar";
 import { storeToRefs } from "pinia";
 import mainFramePropsStore from "./app/stores/mainFrameStore";
-import { MainFrame } from "./app/styled";
+import { MainFrame } from "./assets/styled";
+import SidebarView from "./components/SidebarView.vue";
 import TitlebarView from "./components/TitlebarView.vue";
-const { computedWidth } = storeToRefs(mainFramePropsStore());
+const { marginLeft } = storeToRefs(mainFramePropsStore());
 </script>
 
 <template>
   <TitlebarView />
   <div id="ContentApp">
     <RouterView v-slot="{ Component }">
-      <MainFrame :margin-left="computedWidth">
-        <SideBar :width="computedWidth" />
+      <MainFrame :margin-left="marginLeft">
+        <SidebarView />
         <Transition name="fade" mode="out-in">
           <component :is="Component"></component>
         </Transition>
@@ -26,6 +26,6 @@ const { computedWidth } = storeToRefs(mainFramePropsStore());
   margin-top: 35px;
   height: calc(100dvh - 35px);
   width: 100dvw;
-  overflow: auto;
+  overflow: hidden;
 }
 </style>

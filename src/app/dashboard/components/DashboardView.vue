@@ -8,7 +8,9 @@ const content = ref();
 <template>
   <div class="card" style="height: 100%">
     <div class="card-header">
-      <h1>Teste</h1>
+      <RouterLink :to="{ name: 'login' }">
+        <h1>Teste</h1>
+      </RouterLink>
     </div>
     <div class="card-body d-flex flex-column overflow-y-auto">
       <Editor v-model="content" style="height: 95%" />
