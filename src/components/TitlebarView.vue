@@ -20,7 +20,9 @@ onMounted(() => {
 
 <template>
   <div class="titlebar">
-    <div data-tauri-drag-region></div>
+    <div data-tauri-drag-region>
+      <span class="ms-3 fw-bold juris-rem-title"> JurisREM - Alpha 0.0.1 </span>
+    </div>
     <div class="controls">
       <button id="titlebar-minimize" title="minimize">
         <!-- https://api.iconify.design/mdi:window-minimize.svg -->
@@ -50,7 +52,7 @@ onMounted(() => {
 <style scoped lang="css">
 .titlebar {
   height: 30px;
-  background: #329ea3;
+  background: var(--base03);
   user-select: none;
   display: grid;
   grid-template-columns: auto max-content;
@@ -64,6 +66,7 @@ onMounted(() => {
   display: flex;
 }
 .titlebar button {
+  color: var(--base1);
   appearance: none;
   padding: 0;
   margin: 0;
@@ -75,10 +78,14 @@ onMounted(() => {
   background-color: transparent;
 }
 .titlebar button:hover {
-  background: #5bbec3;
+  background: var(--base0);
 }
 
 *[data-tauri-drag-region] {
   app-region: drag;
+}
+
+.juris-rem-title {
+  color: var(--base0);
 }
 </style>
