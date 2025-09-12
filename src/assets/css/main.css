@@ -32,9 +32,11 @@
 }
 
 .sysbody {
+  overflow: hidden;
+
   width: 100dvw;
   height: 100dvh;
-  overflow: hidden;
+
 }
 
 .sysbody #app {

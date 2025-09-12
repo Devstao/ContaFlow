@@ -8,8 +8,8 @@ const { computedWidth } = storeToRefs(mainFramePropsStore());
 </script>
 
 <template>
+  <TitlebarView />
   <div id="ContentApp">
-    <TitlebarView />
     <RouterView v-slot="{ Component }">
       <MainFrame :margin-left="computedWidth">
         <SideBar :width="computedWidth" />
@@ -21,9 +21,11 @@ const { computedWidth } = storeToRefs(mainFramePropsStore());
   </div>
 </template>
 
-<style>
+<style lang="css" scoped>
 #ContentApp {
-  height: calc(100dvh - 90px);
+  margin-top: 35px;
+  height: calc(100dvh - 35px);
   width: 100dvw;
+  overflow: auto;
 }
 </style>

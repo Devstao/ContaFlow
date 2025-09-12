@@ -1,18 +1,12 @@
 import vue from "@vitejs/plugin-vue";
-import { BootstrapVueNextResolver } from "bootstrap-vue-next/resolvers";
-import Components from "unplugin-vue-components/vite";
+
 import { fileURLToPath } from "url";
 import { defineConfig } from "vite";
 const host = process.env.TAURI_DEV_HOST;
 
 // https://vite.dev/config/
 export default defineConfig(async () => ({
-  plugins: [
-    vue(),
-    Components({
-      resolvers: [BootstrapVueNextResolver()],
-    }),
-  ],
+  plugins: [vue()],
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   //

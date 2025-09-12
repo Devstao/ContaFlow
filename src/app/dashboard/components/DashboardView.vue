@@ -1,19 +1,18 @@
 <script setup lang="ts">
-import CardsView from "./CardsView.vue";
+import Editor from "primevue/editor";
+import { ref } from "vue";
+
+const content = ref();
 </script>
 
 <template>
-  <div class="card" style="min-height: 100%">
-    <div class="card-header">teste</div>
-    <div class="card-body">
-      <div class="row">
-        <div class="col-12">
-          <CardsView />
-        </div>
-        <div class="col-12">
-          <RouterLink :to="{ name: 'login' }"> login</RouterLink>
-        </div>
-      </div>
+  <div class="card" style="height: 100%">
+    <div class="card-header">
+      <h1>Teste</h1>
     </div>
+    <div class="card-body d-flex flex-column overflow-y-auto">
+      <Editor v-model="content" style="height: 95%" />
+    </div>
+    <div class="card-footer">teste</div>
   </div>
 </template>

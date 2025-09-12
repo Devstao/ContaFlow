@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Button } from "@/app/styled";
 import { computed, ref } from "vue";
 import { useRouter } from "vue-router";
 
@@ -16,38 +15,7 @@ const pushDashboard = () => {
 </script>
 
 <template>
-  <div id="LoginContent" class="d-flex flex-column align-items-center justify-content-center">
-    <div class="card" id="cardForm">
-      <div class="card-body">
-        <div class="row">
-          <form action="">
-            <BFormGroup
-              class="mb-3"
-              id="fieldset-1"
-              label-for="input-1"
-              :invalid-feedback="invalidFeedback"
-              :state="state"
-              label-class="mb-1"
-            >
-              <BFormInput id="input-2" v-model="name" :state="state" trim />
-            </BFormGroup>
-            <BFormGroup
-              class="mb-3"
-              id="fieldset-2"
-              label-for="input-2"
-              :invalid-feedback="invalidFeedback"
-              :state="state"
-              label-class="mb-1"
-            >
-              <BFormInput id="input-2" v-model="name" :state="state" trim />
-            </BFormGroup>
-
-            <Button @click="pushDashboard">Acessar</Button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+  <button @click="pushDashboard"></button>
 </template>
 
 <style lang="css">
