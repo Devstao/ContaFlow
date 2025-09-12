@@ -1,4 +1,3 @@
-import "@/assets/js/color-modes.js";
 import "bootstrap-vue-next/dist/bootstrap-vue-next.css";
 import { createBootstrap } from "bootstrap-vue-next/plugins/createBootstrap";
 import "bootstrap/dist/css/bootstrap.css";

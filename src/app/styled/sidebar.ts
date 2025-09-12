@@ -10,7 +10,7 @@ const SideBar = styled("div", props)`
   background: #333;
   color: white;
   padding-top: 20px;
-  z-index: -1;
+  z-index: 1;
 
   transition: width 500ms;
 `;

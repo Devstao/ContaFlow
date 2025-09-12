@@ -2,7 +2,7 @@
 import SideBar from "@/app/styled/sidebar";
 import { storeToRefs } from "pinia";
 import mainFramePropsStore from "./app/stores/mainFrameStore";
-import MainFrame from "./app/styled";
+import { MainFrame } from "./app/styled";
 import TitlebarView from "./components/TitlebarView.vue";
 const { computedWidth } = storeToRefs(mainFramePropsStore());
 </script>
