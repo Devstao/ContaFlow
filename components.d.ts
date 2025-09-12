@@ -8,6 +8,8 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    BFormGroup: typeof import('bootstrap-vue-next/components/BFormGroup')['BFormGroup']
+    BFormInput: typeof import('bootstrap-vue-next/components/BFormInput')['BFormInput']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TitlebarView: typeof import('./src/components/TitlebarView.vue')['default']

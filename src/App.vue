@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import SideBar from "@/app/styled/sidebar";
 import { storeToRefs } from "pinia";
-import mainFramePropsStore from "./app/stores/main";
+import mainFramePropsStore from "./app/stores/mainFrameStore";
 import MainFrame from "./app/styled";
 import TitlebarView from "./components/TitlebarView.vue";
 const { computedWidth } = storeToRefs(mainFramePropsStore());
@@ -23,6 +23,7 @@ const { computedWidth } = storeToRefs(mainFramePropsStore());
 
 <style>
 #ContentApp {
-  min-height: 100%;
+  height: calc(100dvh - 90px);
+  width: 100dvw;
 }
 </style>
