@@ -20,24 +20,36 @@
   --green: #859900;
 }
 
+.solarized-background {
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--base02);
 
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: var(--base2);
+  }
+}
 
 .sysbody {
-
   width: 100dvw;
   height: 100dvh;
   overflow: hidden;
-
-  background-color: var(--base03);
-  color: var(--base0);
-
 }
 
-
 .sysbody #app {
-
   width: 100%;
   height: 100%;
+}
 
+.solarized-text {
+
+  @media (prefers-color-scheme: light) {
+    color: #c5b88b;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--base2);
+  }
 
 }

@@ -21,7 +21,9 @@ onMounted(() => {
 <template>
   <div class="titlebar">
     <div data-tauri-drag-region>
-      <span class="ms-3 fw-bold juris-rem-title"> JurisREM - Alpha 0.0.1 </span>
+      <div class="mt-1 ms-3">
+        <span class="fw-bold solarized-text"> JurisREM - Alpha 0.0.1 </span>
+      </div>
     </div>
     <div class="controls">
       <button id="titlebar-minimize" title="minimize">
@@ -51,8 +53,7 @@ onMounted(() => {
 
 <style scoped lang="css">
 .titlebar {
-  height: 30px;
-  background: var(--base03);
+  height: 35px;
   user-select: none;
   display: grid;
   grid-template-columns: auto max-content;
@@ -61,6 +62,14 @@ onMounted(() => {
   left: 0;
   right: 0;
   z-index: 2;
+
+  @media (prefers-color-scheme: light) {
+    background: var(--base3);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: var(--base03);
+  }
 }
 .titlebar > .controls {
   display: flex;
@@ -83,9 +92,5 @@ onMounted(() => {
 
 *[data-tauri-drag-region] {
   app-region: drag;
-}
-
-.juris-rem-title {
-  color: var(--base0);
 }
 </style>
