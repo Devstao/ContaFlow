@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { StyledButton } from "@/assets/styled/buttons";
+import { InputForm } from "@/assets/styled/inputs";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
@@ -18,13 +20,13 @@ const pushDashboard = (e: Event) => {
         style="height: 100%"
       >
         <BFormGroup id="fieldset-1" label-class="mb-4">
-          <BFormInput class="mb-4" id="input-1" trim />
+          <InputForm class="mb-4" id="input-1" trim />
         </BFormGroup>
         <BFormGroup id="fieldset-1" label-class="mb-4">
-          <BFormInput class="mb-4" id="input-1" trim />
+          <InputForm class="mb-4" id="input-1" trim />
         </BFormGroup>
 
-        <BButton type="submit" class="mt-5 mb-1 fw-bold" variant="success">Login</BButton>
+        <StyledButton type="submit" class="mt-5 mb-1 fw-bold" variant="success">Login</StyledButton>
       </form>
       <div class="col-md-6 bg-white" id="LogoDiv"></div>
     </div>
