@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "JurisREM - Gestão Processual",
+        "title": "ContaFlow - Gestão Contábil",
         "decorations": false,
         "width": 800,
         "height": 600

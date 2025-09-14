@@ -20,13 +20,15 @@ const pushDashboard = (e: Event) => {
         style="height: 100%"
       >
         <BFormGroup id="fieldset-1" label-class="mb-4">
-          <InputForm class="mb-4" id="input-1" trim />
+          <InputForm size="lg" class="mb-4" id="input-1" trim />
         </BFormGroup>
         <BFormGroup id="fieldset-1" label-class="mb-4">
-          <InputForm class="mb-4" id="input-1" trim />
+          <InputForm size="lg" class="mb-4" id="input-1" trim />
         </BFormGroup>
 
-        <StyledButton type="submit" class="mt-5 mb-1 fw-bold" variant="success">Login</StyledButton>
+        <StyledButton size="lg" type="submit" class="mt-5 mb-1 fw-bold" variant="success">
+          Login
+        </StyledButton>
       </form>
       <div class="col-md-6 bg-white" id="LogoDiv"></div>
     </div>
